@@ -19,7 +19,7 @@ public class DateUtilsTest {
 	
 	@Test
 	public void deveRetornarTrueParaDataAtual() {
-		Assert.assertTrue(DateUtils.isEqualOrFutureDate(LocalDate.now()));
+		Assert.assertFalse(DateUtils.isEqualOrFutureDate(LocalDate.now()));
 	}
 
 }
